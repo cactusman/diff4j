@@ -101,8 +101,8 @@ public class UnifiedDiffTest extends TestCase {
 
     private void saveFailure(String externalDiff, String internalDiff) throws IOException {
         try {
-            copyStreamsCloseAll(new FileWriter("F:/diff-unit-failure-external.txt"), new StringReader(externalDiff));
-            copyStreamsCloseAll(new FileWriter("F:/diff-unit-failure-internal.txt"), new StringReader(internalDiff));
+            copyStreamsCloseAll(new FileWriter("./diff-unit-failure-external.txt"), new StringReader(externalDiff));
+            copyStreamsCloseAll(new FileWriter("./diff-unit-failure-internal.txt"), new StringReader(internalDiff));
         } catch (Exception e) {
             // ignore save errors
         }
